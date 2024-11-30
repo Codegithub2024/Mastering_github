@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="w-full min-h-screen relative bg-slate-950 before:absolute before:size-[600px] before:rounded-full before:blur-3xl before:opacity-15 before:-translate-x-1/2 before:-translate-y-1/2 before:top-1/2 before:left-1/2 before:bg-slate-800  after:fixed after:size-[500px] after:rounded-full after:blur-3xl after:opacity-15 after:translate-x-1/2 after:translate-y-1/2 after:bottom-0 after:right-0 after:bg-blue-500">
+    
+    <div class="p-5 text-[#F0F0F0] w-full h-screen grid gap-4 grid-cols-[repeat(auto-fit,minmax(250px,300px))] grid-rows-[repeat(auto-fit,250px)]">
+        <div id="main1" class="bg-slate-900 rounded-3xl min-h-[250px] p-6 h-full relative overflow-hidden cursor-pointer">
+            <p class="text-[#AAA]">MEMORIES</p>
+            <h2 class="font-bold text-2xl">Black Sea</h2>
+            <span class="text-[#AAA] text-sm" id="date"></span>
+            <div class="img transition-[transform] delay-75 duration-300 size-[100px] rounded-2xl overflow-hidden scale-[1.5] -translate-y-5 -rotate-[5deg] absolute bottom-0 right-0 border-solid border-2 border-neutral-300 z-40">
+                <img src="img/img1.jpg" class="size-full object-cover" alt="images">
+            </div>
+            <div class="img transition-[transform] delay-100 duration-300 size-[100px] rounded-2xl overflow-hidden scale-[1.5] -rotate-[15deg] translate-y-0  absolute bottom-0 right-10 border-solid border-2 border-neutral-300 z-30">
+                <img src="img/img2.jpg" class="size-full object-cover" alt="images">
+            </div>
+            <div class="img transition-[transform] delay-150 duration-300 size-[100px] rounded-2xl overflow-hidden scale-[1.5] translate-y-10 -rotate-[20deg] absolute bottom-0 right-20 border-solid border-2 border-neutral-300 z-10">
+                <img src="img/img3.jpg" class="size-full object-cover" alt="images">
+            </div>
+            <div class="absolute right-0 top-0 size-[100px] blur-2xl rounded-full bg-slate-500 opacity-15 translate-x-1/2 -translate-y-1/2"></div>
+        </div>
+        <div class="bg-slate-900 rounded-3xl min-h-[250px] p-6 h-full relative overflow-hidden cursor-pointer">
+            <div class="absolute top-0 left-0 w-full h-full lg:w bg-gray-700 z-20 ">
+                <video src="./videos/animation.mp4" loop autoplay muted class="size-full object-cover absolute top-0 left-0 h-full">
+                </video>
+            </div>
+            <div class="absolute top-0 left-0 w-full z-30 h-full">
+                <div class="absolute bottom-0 right-0 w-full p-5">
+                    <h3 class="text-2xl text-white font-bold ">3D Animation</h3>
+                </div>
+            </div>
+        </div>
+        <div class="bg-slate-900 rounded-3xl min-h-[250px] p-6 h-full relative overflow-hidden cursor-pointer col-span-2">
+            <div class="absolute top-0 left-0 w-full h-full lg:w bg-gray-700 z-20 ">
+                <video src="./videos/animation2.mp4" loop autoplay muted class="size-full object-cover absolute top-0 left-0 h-full">
+                </video>
+            </div>
+            <div class="absolute top-0 left-0 w-full z-30 h-full mix-blend-difference">
+                <div class="absolute top-0 right-0 w-full p-5">
+                    <h3 class="text-2xl text-white font-bold ">Loop Animation</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
